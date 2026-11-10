@@ -42,7 +42,7 @@
 | No | Nama Anggota | NIM | Peran Utama | Modul / Halaman yang Dikerjakan | Cabang Git (Feature Branch) |
 |:--:|---|:---:|---|---|---|
 | 1 | **Dhani** | *[Isi NIM Dhani]* | **Project Lead & Auth** | Inisialisasi Root, Halaman Login, Pencatatan Barang Masuk, & Pengaturan Sistem | `main`, `feat/login`, `feat/input-barang-masuk`, `feat/pengaturan` |
-| 2 | **Nawaf** | *[Isi NIM Nawaf]* | **Dashboard & Audit** | Halaman Dashboard Utama, Statistik Chart Interaktif, & Stok Opname Display | `feat/dashboard`, `feat/stok-opname` |
+| 2 | **Rizqi Nawaf Putra Rosyadi** | *103122430010* | **Dashboard & Audit** | Halaman Dashboard Utama, Statistik Chart Interaktif, & Stok Opname Display | `feat/dashboard`, `feat/stok-opname` |
 | 3 | **Aiko** | *[Isi NIM Aiko]* | **Master Data & Logistik** | Halaman Kelola Data Barang, Katalog Packshot Produk Asli, & Pergerakan Barang FEFO | `feat/kelola-data-barang`, `feat/perpindahan-barang` |
 | 4 | **Indra** | *[Isi NIM Indra]* | **Inventory & Core State** | Halaman Stok Barang per Kloter, Riwayat Aktivitas Audit Trail, & Arsitektur API Context | `feat/stok-barang`, `feat/riwayat-aktivitas` |
 
