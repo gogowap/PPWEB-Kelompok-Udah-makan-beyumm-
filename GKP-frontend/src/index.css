@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    color: #1e293b;
+    background-color: #f8fafc;
+    caret-color: #5b528d;
+  }
+
+  ::selection {
+    background-color: #edeaff;
+    color: #5b528d;
+  }
+
+  table,
+  input[type="number"] {
+    font-variant-numeric: tabular-nums;
+  }
+}
