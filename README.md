@@ -41,10 +41,10 @@
 
 | No | Nama Anggota | NIM | Peran Utama | Modul / Halaman yang Dikerjakan | Cabang Git (Feature Branch) |
 |:--:|---|:---:|---|---|---|
-| 1 | **Dhani** | *[Isi NIM Dhani]* | **Project Lead & Auth** | Inisialisasi Root, Halaman Login, Pencatatan Barang Masuk, & Pengaturan Sistem | `main`, `feat/login`, `feat/input-barang-masuk`, `feat/pengaturan` |
+| 1 | **Ahmad Dhani Ibrahim** | *103122400058* | **Project Lead & Auth** | Inisialisasi Root, Halaman Login, Pencatatan Barang Masuk, & Pengaturan Sistem | `main`, `feat/login`, `feat/input-barang-masuk`, `feat/pengaturan` |
 | 2 | **Rizqi Nawaf Putra Rosyadi** | *103122430010* | **Dashboard & Audit** | Halaman Dashboard Utama, Statistik Chart Interaktif, & Stok Opname Display | `feat/dashboard`, `feat/stok-opname` |
-| 3 | **Aiko** | *[Isi NIM Aiko]* | **Master Data & Logistik** | Halaman Kelola Data Barang, Katalog Packshot Produk Asli, & Pergerakan Barang FEFO | `feat/kelola-data-barang`, `feat/perpindahan-barang` |
-| 4 | **Indra** | *[Isi NIM Indra]* | **Inventory & Core State** | Halaman Stok Barang per Kloter, Riwayat Aktivitas Audit Trail, & Arsitektur API Context | `feat/stok-barang`, `feat/riwayat-aktivitas` |
+| 3 | **Aiko Dwijo Hendarto** | *103122400049* | **Master Data & Logistik** | Halaman Kelola Data Barang, Katalog Packshot Produk Asli, & Pergerakan Barang FEFO | `feat/kelola-data-barang`, `feat/perpindahan-barang` |
+| 4 | **Indra Adi Gunawan** | *103122400055* | **Inventory & Core State** | Halaman Stok Barang per Kloter, Riwayat Aktivitas Audit Trail, & Arsitektur API Context | `feat/stok-barang`, `feat/riwayat-aktivitas` |
 
 ---
 
@@ -386,145 +386,7 @@ Struktur dokumen dibangun menggunakan elemen HTML5 standar secara disiplin:
 
 ---
 
-## 12. Strategi Git & Branching Workflow (9 Feature Branches)
-
-Repository menerapkan **Feature Branch Workflow** murni di mana setiap anggota mengerjakan fitur spesifik pada cabang masing-masing sebelum di-merge ke `main`. Strategi ini menghasilkan **22–26 commit bermakna** dengan format *Conventional Commits*:
-
-```mermaid
-gitGraph
-   commit id: "chore: init architecture"
-   branch feat/login
-   checkout feat/login
-   commit id: "feat: auth service & input"
-   commit id: "feat: login page & validation"
-   checkout main
-   merge feat/login
-   branch feat/dashboard
-   checkout feat/dashboard
-   commit id: "feat: chart & sku search"
-   commit id: "feat: dashboard page kpi"
-   checkout main
-   merge feat/dashboard
-   branch feat/kelola-data-barang
-   checkout feat/kelola-data-barang
-   commit id: "feat: 16 packshot products"
-   commit id: "feat: crud catalog page"
-   checkout main
-   merge feat/kelola-data-barang
-```
-
-### Rincian Eksekusi Cabang per Anggota:
-
-#### 1. Inisialisasi Root `main` (Dhani / Lead)
-```bash
-git init
-git add .gitignore README.md package.json package-lock.json vite.config.js index.html src/index.css src/App.jsx src/main.jsx src/context/ src/hooks/ src/services/apiClient.js src/components/layout/ public/favicon.svg public/icons.svg
-git commit -m "chore: inisialisasi arsitektur dasar SIGKP dengan React 19, Context API, dan Tailwind CSS"
-git branch -M main
-git remote add origin <URL_REPO_GITHUB>
-git push -u origin main
-```
-
-#### 2. Dhani — 3 Fitur (3 Branch)
-```bash
-# Branch 1: Login
-git checkout main && git checkout -b feat/login
-git add public/api/users.json src/services/authService.js src/components/common/Input.jsx src/components/common/Button.jsx
-git commit -m "feat(auth): buat service autentikasi dan komponen form input"
-git add src/pages/LoginPage.jsx
-git commit -m "feat(auth): implementasi halaman login dengan validasi dan toggle password"
-git push -u origin feat/login
-
-# Branch 2: Pencatatan Barang Masuk
-git checkout main && git checkout -b feat/input-barang-masuk
-git add src/pages/BarangMasukPage.jsx
-git commit -m "feat(barang-masuk): implementasi pencatatan barang masuk gudang berbasis kloter batch"
-git add src/pages/BarangMasukPage.jsx
-git commit -m "style(barang-masuk): rapikan validasi field form dan responsivitas layout"
-git push -u origin feat/input-barang-masuk
-
-# Branch 3: Pengaturan
-git checkout main && git checkout -b feat/pengaturan
-git add public/api/settings.json src/pages/SettingsPage.jsx
-git commit -m "feat(pengaturan): implementasi form konfigurasi ambang batas stok dan kedaluwarsa"
-git add src/pages/SettingsPage.jsx
-git commit -m "style(pengaturan): lengkapi pesan validasi dan sinkronisasi batas peringatan"
-git push -u origin feat/pengaturan
-```
-
-#### 3. Nawaf — 2 Fitur (2 Branch)
-```bash
-# Branch 1: Dashboard
-git checkout main && git checkout -b feat/dashboard
-git add src/components/common/Card.jsx src/components/common/Badge.jsx src/components/dashboard/ProductImage.jsx
-git commit -m "feat(ui): buat komponen Card, Badge status, dan ProductImage thumbnail"
-git add src/components/dashboard/StatistikChart.jsx src/components/dashboard/SkuSearch.jsx
-git commit -m "feat(dashboard): implementasi chart statistik perputaran barang dan pencarian SKU"
-git add src/pages/DashboardPage.jsx
-git commit -m "feat(dashboard): susun halaman dashboard dengan metrik KPI dan feed aktivitas"
-git push -u origin feat/dashboard
-
-# Branch 2: Stok Opname
-git checkout main && git checkout -b feat/stok-opname
-git add src/pages/StockOpnamePage.jsx
-git commit -m "feat(opname): implementasi tabel rekonsiliasi stok fisik display terhadap sistem"
-git add src/pages/StockOpnamePage.jsx
-git commit -m "style(opname): tambahkan kalkulasi selisih stok otomatis dan dialog konfirmasi"
-git push -u origin feat/stok-opname
-```
-
-#### 4. Aiko — 2 Fitur (2 Branch)
-```bash
-# Branch 1: Kelola Data Barang
-git checkout main && git checkout -b feat/kelola-data-barang
-git add public/api/barang.json public/images/products/
-git commit -m "feat(katalog): tambahkan dataset 16 produk kosmetik lengkap dengan foto packshot asli"
-git add src/components/common/Modal.jsx src/components/common/Select.jsx src/components/common/Textarea.jsx
-git commit -m "feat(ui): buat komponen modal dialog dan form select/textarea reusable"
-git add src/pages/BarangPage.jsx
-git commit -m "feat(barang): implementasi CRUD master barang dengan grid responsif dan filter kategori"
-git push -u origin feat/kelola-data-barang
-
-# Branch 2: Perpindahan Barang FEFO
-git checkout main && git checkout -b feat/perpindahan-barang
-git add src/utils/kloterHelpers.js
-git commit -m "feat(helper): buat kalkulasi prioritas kloter kedaluwarsa terdekat (FEFO)"
-git add src/pages/PergerakanPage.jsx
-git commit -m "feat(pergerakan): implementasi pemindahan stok gudang ke display berbasis FEFO"
-git push -u origin feat/perpindahan-barang
-```
-
-#### 5. Indra — 2 Fitur (2 Branch)
-```bash
-# Branch 1: Stok Barang
-git checkout main && git checkout -b feat/stok-barang
-git add src/services/barangService.js src/components/common/Table.jsx src/components/common/LoadingSkeleton.jsx src/components/common/ErrorState.jsx
-git commit -m "feat(ui): buat komponen Table dengan scroll container, LoadingSkeleton, dan ErrorState"
-git add src/pages/StokPage.jsx
-git commit -m "feat(stok): implementasi pemantauan stok barang per kloter dan aksi edit stok"
-git push -u origin feat/stok-barang
-
-# Branch 2: Riwayat Aktivitas
-git checkout main && git checkout -b feat/riwayat-aktivitas
-git add src/services/riwayatService.js src/utils/dateHelpers.js public/api/riwayat.json
-git commit -m "feat(riwayat): buat service riwayat transaksi dan helper tanggal filter"
-git add src/pages/RiwayatPage.jsx
-git commit -m "feat(riwayat): implementasi log audit multi-kriteria dengan filter rentang tanggal"
-git push -u origin feat/riwayat-aktivitas
-```
-
-#### 6. Finalisasi Dokumentasi ke `main`
-```bash
-git checkout main
-git pull origin main
-git add README.md
-git commit -m "docs: finalisasi dokumentasi tugas besar kelompok Udah makan beyumm?😹"
-git push origin main
-```
-
----
-
-## 13. Akun Autentikasi Pengguna (Demo Credentials)
+## 12. Akun Autentikasi Pengguna (Demo Credentials)
 
 Silakan gunakan kredensial berikut untuk menguji otentikasi pada halaman Login (`/`):
 
@@ -535,7 +397,7 @@ Silakan gunakan kredensial berikut untuk menguji otentikasi pada halaman Login (
 
 ---
 
-## 14. Panduan Tangkapan Layar (Screenshots) untuk Laporan LMS
+## 13. Panduan Tangkapan Layar (Screenshots) untuk Laporan LMS
 
 Berikut rincian 9 tangkapan layar antarmuka beserta penjelasan deskriptif yang wajib dilampirkan pada laporan PDF/Word:
 
@@ -560,7 +422,7 @@ Berikut rincian 9 tangkapan layar antarmuka beserta penjelasan deskriptif yang w
 
 ---
 
-## 15. Matriks Pemenuhan Rubrik Penilaian Tugas Besar (Self-Assessment)
+## 14. Matriks Pemenuhan Rubrik Penilaian Tugas Besar (Self-Assessment)
 
 Tabel evaluasi diri yang membuktikan seluruh poin rubrik tugas besar telah terpenuhi secara maksimal (Target Nilai: **100 / 100 Poin**):
 
