@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "password": "password123",
+    "nama": "Admin Gudang GKP",
+    "role": "Kepala Gudang"
+  },
+  {
+    "id": 2,
+    "username": "staf",
+    "password": "password123",
+    "nama": "Staf Operasional",
+    "role": "Staf Inventaris"
+  }
+]
