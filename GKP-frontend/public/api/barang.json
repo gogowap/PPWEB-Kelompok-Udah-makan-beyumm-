@@ -1,0 +1,430 @@
+[
+  {
+    "id": 1,
+    "sku": "SKN-001",
+    "nama": "Hydrating Hyaluronic Acid Serum 30ml",
+    "kategori": "Skincare",
+    "satuan": "pcs",
+    "stokMinimum": 5,
+    "gambar": "/images/products/skn-001.jpg",
+    "stokGudang": 28,
+    "stokDisplay": 12,
+    "kadaluarsa": "2027-05-15",
+    "kloter": [
+      {
+        "id": 101,
+        "nomor": 1,
+        "jumlah": 25,
+        "jumlahAwal": 25,
+        "stokGudang": 13,
+        "stokDisplay": 12,
+        "tanggalMasuk": "2026-11-01",
+        "tanggalKadaluarsa": "2027-05-15",
+        "lokasiRak": "Rak A-01",
+        "catatan": "Distributor resmi batch awal"
+      },
+      {
+        "id": 102,
+        "nomor": 2,
+        "jumlah": 15,
+        "jumlahAwal": 15,
+        "stokGudang": 15,
+        "stokDisplay": 0,
+        "tanggalMasuk": "2026-11-08",
+        "tanggalKadaluarsa": "2027-08-20",
+        "lokasiRak": "Rak A-02",
+        "catatan": "Restock mingguan"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "sku": "SKN-002",
+    "nama": "Attitude Super Leaves Gentle Cleanser 100ml",
+    "kategori": "Skincare",
+    "satuan": "pcs",
+    "stokMinimum": 5,
+    "gambar": "/images/products/skn-002.webp",
+    "stokGudang": 4,
+    "stokDisplay": 8,
+    "kadaluarsa": "2026-12-05",
+    "kloter": [
+      {
+        "id": 201,
+        "nomor": 1,
+        "jumlah": 15,
+        "jumlahAwal": 15,
+        "stokGudang": 4,
+        "stokDisplay": 8,
+        "tanggalMasuk": "2026-11-01",
+        "tanggalKadaluarsa": "2026-12-05",
+        "lokasiRak": "Rak A-03",
+        "catatan": "Prioritas FEFO display"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "sku": "SKN-003",
+    "nama": "Vaseline Daily UV Protection Face Lotion 100ml",
+    "kategori": "Skincare",
+    "satuan": "pcs",
+    "stokMinimum": 5,
+    "gambar": "/images/products/skn-003.webp",
+    "stokGudang": 14,
+    "stokDisplay": 6,
+    "kadaluarsa": "2027-07-20",
+    "kloter": [
+      {
+        "id": 301,
+        "nomor": 1,
+        "jumlah": 20,
+        "jumlahAwal": 20,
+        "stokGudang": 14,
+        "stokDisplay": 6,
+        "tanggalMasuk": "2026-11-03",
+        "tanggalKadaluarsa": "2027-07-20",
+        "lokasiRak": "Rak A-04",
+        "catatan": "Penyimpanan suhu ruang sejuk"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "sku": "SKN-004",
+    "nama": "Calvin Klein Clarifying Essence Toner 150ml",
+    "kategori": "Skincare",
+    "satuan": "pcs",
+    "stokMinimum": 5,
+    "gambar": "/images/products/skn-004.webp",
+    "stokGudang": 9,
+    "stokDisplay": 5,
+    "kadaluarsa": "2027-09-10",
+    "kloter": [
+      {
+        "id": 401,
+        "nomor": 1,
+        "jumlah": 14,
+        "jumlahAwal": 14,
+        "stokGudang": 9,
+        "stokDisplay": 5,
+        "tanggalMasuk": "2026-11-04",
+        "tanggalKadaluarsa": "2027-09-10",
+        "lokasiRak": "Rak A-05",
+        "catatan": "Segel pabrik aman"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "sku": "SKN-005",
+    "nama": "Olay Ultra Moisture Shea Butter Body Wash 300ml",
+    "kategori": "Skincare",
+    "satuan": "pcs",
+    "stokMinimum": 5,
+    "gambar": "/images/products/skn-005.webp",
+    "stokGudang": 18,
+    "stokDisplay": 6,
+    "kadaluarsa": "2027-04-12",
+    "kloter": [
+      {
+        "id": 501,
+        "nomor": 1,
+        "jumlah": 24,
+        "jumlahAwal": 24,
+        "stokGudang": 18,
+        "stokDisplay": 6,
+        "tanggalMasuk": "2026-11-02",
+        "tanggalKadaluarsa": "2027-04-12",
+        "lokasiRak": "Rak A-06",
+        "catatan": "Botol isi penuh standar pabrik"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "sku": "MKP-001",
+    "nama": "Velvet Matte Red Lipstick 3.5g",
+    "kategori": "Makeup",
+    "satuan": "pcs",
+    "stokMinimum": 5,
+    "gambar": "/images/products/mkp-001.webp",
+    "stokGudang": 18,
+    "stokDisplay": 2,
+    "kadaluarsa": "2027-06-10",
+    "kloter": [
+      {
+        "id": 601,
+        "nomor": 1,
+        "jumlah": 20,
+        "jumlahAwal": 20,
+        "stokGudang": 18,
+        "stokDisplay": 2,
+        "tanggalMasuk": "2026-11-02",
+        "tanggalKadaluarsa": "2027-06-10",
+        "lokasiRak": "Rak B-01",
+        "catatan": "Stok display menipis, perlu refill"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "sku": "MKP-002",
+    "nama": "Flawless Powder Canister Compact 15g",
+    "kategori": "Makeup",
+    "satuan": "pcs",
+    "stokMinimum": 5,
+    "gambar": "/images/products/mkp-002.webp",
+    "stokGudang": 3,
+    "stokDisplay": 7,
+    "kadaluarsa": "2026-11-28",
+    "kloter": [
+      {
+        "id": 701,
+        "nomor": 1,
+        "jumlah": 10,
+        "jumlahAwal": 10,
+        "stokGudang": 3,
+        "stokDisplay": 7,
+        "tanggalMasuk": "2026-11-02",
+        "tanggalKadaluarsa": "2026-11-28",
+        "lokasiRak": "Rak B-02",
+        "catatan": "Mendekati kedaluwarsa — prioritaskan penjualan"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "sku": "MKP-003",
+    "nama": "Professional Eyeshadow Palette with Mirror",
+    "kategori": "Makeup",
+    "satuan": "pcs",
+    "stokMinimum": 5,
+    "gambar": "/images/products/mkp-003.webp",
+    "stokGudang": 12,
+    "stokDisplay": 4,
+    "kadaluarsa": "2027-10-15",
+    "kloter": [
+      {
+        "id": 801,
+        "nomor": 1,
+        "jumlah": 16,
+        "jumlahAwal": 16,
+        "stokGudang": 12,
+        "stokDisplay": 4,
+        "tanggalMasuk": "2026-11-05",
+        "tanggalKadaluarsa": "2027-10-15",
+        "lokasiRak": "Rak B-03",
+        "catatan": "Kemasan bubble wrap utuh"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "sku": "MKP-004",
+    "nama": "Essence Mascara Lash Princess Volume 12ml",
+    "kategori": "Makeup",
+    "satuan": "pcs",
+    "stokMinimum": 5,
+    "gambar": "/images/products/mkp-004.webp",
+    "stokGudang": 20,
+    "stokDisplay": 10,
+    "kadaluarsa": "2027-08-30",
+    "kloter": [
+      {
+        "id": 901,
+        "nomor": 1,
+        "jumlah": 30,
+        "jumlahAwal": 30,
+        "stokGudang": 20,
+        "stokDisplay": 10,
+        "tanggalMasuk": "2026-11-06",
+        "tanggalKadaluarsa": "2027-08-30",
+        "lokasiRak": "Rak B-04",
+        "catatan": "Produk terlaris kategori makeup"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "sku": "MKP-005",
+    "nama": "Glossy Finish Red Nail Polish 10ml",
+    "kategori": "Makeup",
+    "satuan": "pcs",
+    "stokMinimum": 5,
+    "gambar": "/images/products/mkp-005.webp",
+    "stokGudang": 15,
+    "stokDisplay": 5,
+    "kadaluarsa": "2028-01-10",
+    "kloter": [
+      {
+        "id": 1001,
+        "nomor": 1,
+        "jumlah": 20,
+        "jumlahAwal": 20,
+        "stokGudang": 15,
+        "stokDisplay": 5,
+        "tanggalMasuk": "2026-11-07",
+        "tanggalKadaluarsa": "2028-01-10",
+        "lokasiRak": "Rak B-05",
+        "catatan": "Simpan di rak tertutup"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "sku": "BDY-001",
+    "nama": "Gucci Bloom Perfumed Body Lotion 100ml",
+    "kategori": "Body Care",
+    "satuan": "pcs",
+    "stokMinimum": 5,
+    "gambar": "/images/products/bdy-001.webp",
+    "stokGudang": 22,
+    "stokDisplay": 10,
+    "kadaluarsa": "2027-11-20",
+    "kloter": [
+      {
+        "id": 1101,
+        "nomor": 1,
+        "jumlah": 32,
+        "jumlahAwal": 32,
+        "stokGudang": 22,
+        "stokDisplay": 10,
+        "tanggalMasuk": "2026-11-03",
+        "tanggalKadaluarsa": "2027-11-20",
+        "lokasiRak": "Rak C-01",
+        "catatan": "Karton isi 32 botol"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "sku": "BDY-002",
+    "nama": "Dolce Shine Nourishing Body Mist 100ml",
+    "kategori": "Body Care",
+    "satuan": "pcs",
+    "stokMinimum": 5,
+    "gambar": "/images/products/bdy-002.webp",
+    "stokGudang": 11,
+    "stokDisplay": 5,
+    "kadaluarsa": "2027-09-25",
+    "kloter": [
+      {
+        "id": 1201,
+        "nomor": 1,
+        "jumlah": 16,
+        "jumlahAwal": 16,
+        "stokGudang": 11,
+        "stokDisplay": 5,
+        "tanggalMasuk": "2026-11-06",
+        "tanggalKadaluarsa": "2027-09-25",
+        "lokasiRak": "Rak C-02",
+        "catatan": "Kualitas aroma terjamin"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "sku": "HRC-001",
+    "nama": "Chanel Coco Noir Hair Mist Elixir 50ml",
+    "kategori": "Hair Care",
+    "satuan": "pcs",
+    "stokMinimum": 5,
+    "gambar": "/images/products/hrc-001.webp",
+    "stokGudang": 7,
+    "stokDisplay": 4,
+    "kadaluarsa": "2027-01-12",
+    "kloter": [
+      {
+        "id": 1301,
+        "nomor": 1,
+        "jumlah": 11,
+        "jumlahAwal": 11,
+        "stokGudang": 7,
+        "stokDisplay": 4,
+        "tanggalMasuk": "2026-11-04",
+        "tanggalKadaluarsa": "2027-01-12",
+        "lokasiRak": "Rak D-01",
+        "catatan": "Produk premium perawatan rambut"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "sku": "HRC-002",
+    "nama": "Keratin Smooth Hair Vitamin Serum 65ml",
+    "kategori": "Hair Care",
+    "satuan": "pcs",
+    "stokMinimum": 5,
+    "gambar": "/images/products/hrc-002.jpg",
+    "stokGudang": 16,
+    "stokDisplay": 6,
+    "kadaluarsa": "2027-06-25",
+    "kloter": [
+      {
+        "id": 1401,
+        "nomor": 1,
+        "jumlah": 22,
+        "jumlahAwal": 22,
+        "stokGudang": 16,
+        "stokDisplay": 6,
+        "tanggalMasuk": "2026-11-05",
+        "tanggalKadaluarsa": "2027-06-25",
+        "lokasiRak": "Rak D-02",
+        "catatan": "Botol kaca bersegel rapi"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "sku": "PRF-001",
+    "nama": "Dior J'adore Eau De Parfum 50ml",
+    "kategori": "Fragrance",
+    "satuan": "pcs",
+    "stokMinimum": 5,
+    "gambar": "/images/products/prf-001.webp",
+    "stokGudang": 12,
+    "stokDisplay": 3,
+    "kadaluarsa": "2028-03-30",
+    "kloter": [
+      {
+        "id": 1501,
+        "nomor": 1,
+        "jumlah": 15,
+        "jumlahAwal": 15,
+        "stokGudang": 12,
+        "stokDisplay": 3,
+        "tanggalMasuk": "2026-11-05",
+        "tanggalKadaluarsa": "2028-03-30",
+        "lokasiRak": "Rak E-01",
+        "catatan": "Kategori high value - simpan di rak khusus"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "sku": "PRF-002",
+    "nama": "Bleu De Chanel Eau De Toilette 100ml",
+    "kategori": "Fragrance",
+    "satuan": "pcs",
+    "stokMinimum": 5,
+    "gambar": "/images/products/prf-002.jpg",
+    "stokGudang": 14,
+    "stokDisplay": 4,
+    "kadaluarsa": "2028-05-15",
+    "kloter": [
+      {
+        "id": 1601,
+        "nomor": 1,
+        "jumlah": 18,
+        "jumlahAwal": 18,
+        "stokGudang": 14,
+        "stokDisplay": 4,
+        "tanggalMasuk": "2026-11-07",
+        "tanggalKadaluarsa": "2028-05-15",
+        "lokasiRak": "Rak E-02",
+        "catatan": "Batch original distributor resmi"
+      }
+    ]
+  }
+]
